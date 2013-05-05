@@ -1,0 +1,34 @@
+
+
+***** git instructions *****
+
+
+
+// show status
+
+git status
+
+
+// show log
+
+git log
+
+
+// add file to staging area
+
+git add file name
+
+
+// commit file to local repository
+
+git commit -m "message here"
+
+
+// create remote repository to your github account
+
+git remote add origin git@github.com:leonmagee/name_of_repository.git
+
+
+// push files to remote repository on github (enter useranme and password)
+
+git push -u origin master
