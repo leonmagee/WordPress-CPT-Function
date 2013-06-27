@@ -44,12 +44,5 @@
      
         add_action( 'init', 'mm_activate_post_types' );
     }
-    
-    function new_data() {
-        
-        return true;
-    }
-    
-    //sdlkfjsdlf
 
 ?>
