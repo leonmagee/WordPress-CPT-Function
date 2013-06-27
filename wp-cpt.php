@@ -1,5 +1,9 @@
 <?php
 
+// ***** PUT ALL OF THIS IN FUNCTIONS.PHP *****
+
+// ***** MAIN FUNCTION *****
+
 	function mm_create_post_type( $pt_name, $single_name, $plural_name, $slug, $public = true,
 	$supports = array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes' ) ) {
 	
@@ -34,15 +38,25 @@
 					);
 	}
 	
+	
+
+// ***** DECLARATION FUNCTION - ADD THE DETAILS OF ALL YOUR CUSTOTM POST TYPES *****
+
+// ***** 5TH PARAMETER `PUBLIC` DEFAULTS TO TRUE, ENTER `FALSE` TO MAKE IT NOT PUBLIC *****
+
+// ***** 6TH PARAMETER IS ARRAY OF SUPPORTED FEATURES. MAKE NEW ARRAY TO OVERWRITE
+//       DEFAUTLS TO  'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes' *****
+	
     function mm_activate_post_types() {
+    	
+    	mm_create_post_type( 'CPT-NAME', 'SINGLE-NAME', 'PLURAL-NAME', 'SLUG', 'PUBLIC? (BOOLEAN)', 'SUPPORTS (ARRAY)' );
     
     	mm_create_post_type( 'testimonials', 'Testimonial', 'Testimonials', 'testimonials' );
-	}
-	
-	
-    if ( function_exists( 'mm_activate_post_types' ) ) {
-     
-        add_action( 'init', 'mm_activate_post_types' );
     }
-
+	
+	
+// ***** LINKS FUNCTION TO ACTION HOOK
+     
+   add_action( 'init', 'mm_activate_post_types' );
+    
 ?>
