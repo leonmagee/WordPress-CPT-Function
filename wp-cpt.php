@@ -55,6 +55,8 @@
     	mm_create_post_type( 'testimonials', 'Testimonial', 'Testimonials', 'testimonials' );
  
     	mm_create_post_type( 'portfolio', 'Portfolio', 'Portfolios', 'portfolios', false, $new_supports_array );
+
+    	mm_create_post_type( 'cars', 'Car', 'Cars', 'cars' );
     }
 	
 	
