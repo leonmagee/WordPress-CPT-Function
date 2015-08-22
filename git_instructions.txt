@@ -32,3 +32,27 @@ git remote add origin git@github.com:leonmagee/name_of_repository.git
 // push files to remote repository on github (enter useranme and password)
 
 git push -u origin master
+
+
+// remove files from repo only
+
+git rm --cached filename.file
+
+
+// remove directory from repo only
+
+git rm -r --cached directoryname
+
+
+// remove file from repo and local direcoty
+
+git rm filename.file
+
+
+// list all files in everywhere
+
+git ls-tree --full-tree -r HEAD
+
+// list all files in repo
+
+git ls-files
