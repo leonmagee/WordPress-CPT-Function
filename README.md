@@ -1,6 +1,6 @@
 # Create Custom Post Type
 
-#### Usage (put in functions.php)
+##### Usage ( put in functions.php )
 ```php
 /**
  * Create New Custom Post Types
@@ -13,8 +13,8 @@ mm_create_wp_cpt::create_post_type('press-release', 'Press Release', 'Press Rele
 ```
 
 
-#### Icons
+##### Icons
 A Complete list of icons is available here:
 ```
-https://developer.wordpress.org/resource/dashicons/#id
+https://developer.wordpress.org/resource/dashicons
 ```
