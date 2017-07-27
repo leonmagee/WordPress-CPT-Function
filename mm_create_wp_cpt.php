@@ -33,8 +33,8 @@ class mm_create_wp_cpt {
 				'menu_position'       => 4,
 				'exclude_from_search' => false,
 				'labels'              => array(
-					'name'               => $plural_name" ),
-					'singular_name'      => $single_name" ),
+					'name'               => $plural_name,
+					'singular_name'      => $single_name,
 					'add_new'            => 'Add New ' . $single_name,
 					'add_new_item'       => 'Add New ' . $single_name,
 					'edit_item'          => 'Edit ' . $single_name,
